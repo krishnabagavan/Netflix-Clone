@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 105vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 11px 17px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+nav button a {
+    text-decoration:none; 
+    color:inherit;
+}
+.language-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+.language-btn:hover, .language-btn:focus {
+    border: 2px solid white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+.red-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: grab;
+}
+.header-content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.email-signup{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 5px;
+    background: transparent;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #fff ;
+}
+.email-signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-left: 10px;
+}
+.features-box{
+    padding: 5% 12%;
+    font-size: 22px;
+}
+.email-signup input {
+    border: 1px solid #ccc; 
+    padding: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s; 
+}
+.email-signup input.invalid {
+    border-color: red; 
+}
+.email-signup input.valid {
+    border-color: green; 
+}
+.message {
+    text-align: left;
+    color: red;
+    font-size: 14px; 
+    margin-top: 8px; 
+    display: flex;
+    align-items: center;
+}
+.message svg {
+    margin-right: 20px; 
+}
+.row_1st{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.row_2nd{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text_column{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img_column{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img_column img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.card-1 {
+    position: relative;
+}
+.card-1 img {
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+    margin: -29.5% 0%;
+    z-index: 2;
+}
+.card-1 video {
+    position: relative;
+    margin: -14% 13.3%;
+    width: 73%;
+    height: 54%;
+}
+.card-3 img{
+    position: relative;
+    width: 100%; /* Adjust based on aspect ratio */
+    object-fit: contain;
+    z-index: 2;
+}
+.card-3 video{
+    position: absolute;
+    top: 8.5%;
+    height: 45%;
+    right: 8.8%;
+}
+.card-1-padding {
+    margin: 10% 0 8% 0;
+    padding: 5% 0; 
+}
+.card-3-padding {
+    margin:3% 0 0;
+    padding: 0%;
+}
+.features-box h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;   
+}
+.faq-box{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 6px solid #333;
+}
+.faq-box h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width : 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.accordion li label:hover{
+    background: #797777;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 35px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq-box .email-signup{
+    max-width: 550px;
+    margin: 20px auto 60px;
+}
+.faq-box small{
+    font-size: 16px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.footer .col{
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer .row_1st{
+    align-items: flex-start;
+    padding: 2% 0;
+    width: 100%;
+}
+.footer .row_2nd{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 0;
+    width: 50%;
+}
+.footer .col {
+    flex-direction: row;
+}
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.row-p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+/* ---------------------------------Media Query--------------------------------------------- */
+
+/* Media Query for screen sizes up to 1060px */
+@media only screen and (max-width: 1060px) {
+    /* Header */
+    .header{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px 5%;
+        position: relative;
+    }
+    .header-content{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        margin-top: 100px;
+    }
+    .logo {
+        width: 120px;
+    }
+    nav div {
+        display: flex;
+    } 
+    nav button {
+        min-width: max-content;
+        padding: 9px 14px;
+    }
+    nav .language-btn {
+        padding: 7px 12px;
+    }
+    .red-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: grab;
+    }
+    .header-content {
+        padding-top: 0px;
+    }
+    .header-content h1 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .header-content h3 {
+        font-size: 20px;
+    }
+    .header-content p {
+        min-width: max-content;
+    }
+    .email-signup button {
+        font-size: 14px;
+        padding: 14px 25px;
+    }
+    /* Features Box */
+    .features-box {
+        padding: 0px;
+        margin: 5% 12%;
+        font-size: 22px;
+    }
+    .text_column, .img_column{
+        flex-basis: 100%;
+    }
+    .features-box h2{   
+        font-size: 36px;
+        text-align: center;
+    }
+    .features-box p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .row_1st:nth-child(2), .row_1st:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features-box .row_1st{
+        padding: 10px 0;
+    }
+    .img_column{
+        width: 75%;
+    }
+    .padding {
+        margin-bottom: 27%;
+    }
+    .card-1 {
+        padding: auto;
+        margin-bottom: 35%;
+    }
+    .card-1 video {
+        position: relative;
+        margin: -14% 13.3%;
+        width: 73%;
+        height: 54%;
+        z-index: -1;
+    }
+    .card-3 {
+        position: relative;
+    }
+    .card-3 img{
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        object-fit: contain;
+        z-index: 2;
+    }
+    .card-3 video{
+        position: absolute;
+        object-fit: fill;
+        height: 47%;
+        right: 17.8%;
+        width: 66%;
+        z-index: -1;
+    }
+    .card-1-padding {
+        margin: 10% 0 8% 0;
+        padding: 5% 0; 
+    }
+    .card-3-padding {
+        margin:3% 0 0;
+    }
+    /* FAQ Sections */
+    .faq-box {
+        padding: 20px 10%;
+        font-size: 16px;
+    }
+    .faq-box h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .accordion li label {
+        padding: 15px;
+        font-size: 16px;
+    }
+    label::after {
+        font-size: 28px;
+    }
+    .accordion .content {
+        font-size: 16px;
+    }
+    /* Footer */
+    .footer {
+        padding: 5% 10%; 
+    }
+    .footer .row_1st{
+        align-items: flex-start;
+        padding: 2% 0;
+        width: 100%;
+    }
+    .footer .row_2nd{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2% 0;
+        width: 100%;
+    }
+    .row_1st {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+    .col {
+        flex: 1 1 calc(50% - 20px); /* Each column takes up 50% of the width minus the gap */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+        margin-bottom: 20px; /* Add space below each column */
+    }
+    .col a {
+        display: block;
+        margin-bottom: 10px; /* Space between links */
+    }
+    .language-btn {
+        display: block;
+        width: 100%; /* Make the button full width */
+        text-align: center;
+        margin: 10px 5px; /* Space above the button */
+    }
+    .row-p {
+        text-align: center; /* Center align the text */
+        margin-top: 20px; /* Space above the text */
+    }
+}
+/* Media Query for screen sizes up to 600px */
+@media only screen and (max-width: 600px){
+    .header {
+        width: 100%;
+        height: 80vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px 5%;
+        position: relative;
+    }
+    .language-btn {
+        font-size: 12px;
+    }
+    nav .red-btn {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logo{
+        width: 100px
+    }
+    nav button{
+        padding: 8px 10px;
+    }
+    nav .language-btn {
+        padding: 8px 10px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+    }
+    .header-content h1{
+        font-size: 26px;
+        line-height: 1.5;
+        margin-bottom: 2%;
+    }
+    .header-content p {
+        min-width: min-content;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+    .text_column, .img_column{
+        flex-basis: 100%;
+    }
+    .features-box h2{
+        font-size: 26px;
+    }
+    .features-box p{
+        font-size: 16px;
+    }
+    .row_1st:nth-child(2){
+        flex-direction: column;
+    }
+    .features-box .row_1st{
+        padding: 10px 0;
+    }
+    .faq-box h2{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label {
+        padding: 10px ;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+    small p{
+        font-size: 13px;
+    }
+    .footer .row_1st {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px; 
+    }
+    footer .col {
+        flex-basis: 40%;
+        flex-grow: 1;
+        margin-bottom: 15px;
+    }
+    .footer .row_1st{
+        align-items: flex-start;
+        padding: 3% 0;
+        width: 100%;
+    }
+    .footer .row_2nd{
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0px;
+        width: 100%;
+    }
+    footer .language-btn {
+        width: auto;
+    }
+    footer .row-p {
+        text-align: left;
+    }
+}
